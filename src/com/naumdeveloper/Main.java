@@ -10,9 +10,8 @@ public class Main {
 
         //String str = Arrays.toString(CodeWars.invert(myIntArray));
 
-        String str = "This is an example! ";
-
-        System.out.println(CodeWars.reverseWords(str));
+        String str = "abc";
+        CodeWars.accum(str);
 
     }
 }

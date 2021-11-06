@@ -1,5 +1,7 @@
 package com.naumdeveloper;
 
+import java.util.ArrayList;
+
 public class CodeWars {
 
 
@@ -69,6 +71,8 @@ You can assume that all values are integers. Do not mutate the input array/list.
 
 
     /*
+
+    public static String accum(String s)
     This time no story, no theory. The examples below show you how to write function accum:
 
     Examples:
@@ -79,8 +83,22 @@ You can assume that all values are integers. Do not mutate the input array/list.
     The parameter of accum is a string which includes only letters from a..z and A..Z.
      */
 
-    public static String accum(String s) {
+    public static void accum(String s) {
 
-        return "";
+        char[] c_arr = s.toCharArray();
+
+        ArrayList<Character>summa = new ArrayList<>();
+
+        for(int i = 0; i < c_arr.length; i++) {
+            summa.add(c_arr[i]);
+            for(int j = 0; j < i; j++)
+                summa.add(c_arr[i]);
+        }
+
+        for(char var : summa){
+            System.out.print(var);
+        }
+
     }
+
 }
