@@ -52,7 +52,35 @@ You can assume that all values are integers. Do not mutate the input array/list.
 
     public static String reverseWords(final String original)
     {
-        return "";
+        StringBuilder builder = new StringBuilder();
+        String[] str = original.split(" ");
+        int length = str.length;
+        for(int k = 0; k<=length-1; k++)
+        {
+            for(int j=str[k].length()-1;j>=0;j--)
+            {
+                builder.append(str[k].charAt(j));
+            }
+            if(k<length-1) builder.append(" ");
+        }
+
+        return (length>0) ? builder.toString() : original;
     }
 
+
+    /*
+    This time no story, no theory. The examples below show you how to write function accum:
+
+    Examples:
+    accum("abcd") -> "A-Bb-Ccc-Dddd"
+    accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+    accum("cwAt") -> "C-Ww-Aaa-Tttt"
+
+    The parameter of accum is a string which includes only letters from a..z and A..Z.
+     */
+
+    public static String accum(String s) {
+
+        return "";
+    }
 }

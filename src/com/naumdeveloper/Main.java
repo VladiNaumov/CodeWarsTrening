@@ -6,11 +6,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] myIntArray = {1, 2, 3, 4, 5, 6 , 7 ,7 };
+        //int[] myIntArray = {1, 2, 3, 4, 5, 6 , 7 ,7 };
 
-        String str = Arrays.toString(CodeWars.invert(myIntArray));
+        //String str = Arrays.toString(CodeWars.invert(myIntArray));
 
-        System.out.println(str);
+        String str = "This is an example! ";
+
+        System.out.println(CodeWars.reverseWords(str));
 
     }
 }
