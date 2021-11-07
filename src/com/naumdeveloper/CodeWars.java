@@ -85,26 +85,22 @@ You can assume that all values are integers. Do not mutate the input array/list.
 
     public static String accum(String s) {
 
-        char[] c_arr = s.toCharArray();
+        String arr;
+        arr = s;
+        String str = "";
 
-        ArrayList<Character>summa = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
 
-        for(int i = 0; i < c_arr.length; i++) {
-            summa.add(c_arr[i]);
+        for(int i = 0; i < arr.length(); i++) {
+            str = sb.append(arr.charAt(i)).toString();
 
             for(int j = 0; j < i; j++)
-                summa.add(c_arr[i]);
 
-          //  summa.add('-');
-        }
-
-        StringBuilder builder = new StringBuilder(summa.size());
-        for (Character ch: summa){
-            builder.append(ch);
+                str = sb.append(arr.charAt(i)).toString();
 
         }
 
-            return builder.toString();
+            return str;
     }
 
 }

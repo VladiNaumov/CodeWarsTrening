@@ -10,7 +10,7 @@ public class Main {
 
         //String str = Arrays.toString(CodeWars.invert(myIntArray));
 
-        String str = "abc";
+        String str = "abcd";
         System.out.println(CodeWars.accum(str));
 
     }
