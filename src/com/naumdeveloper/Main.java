@@ -10,8 +10,11 @@ public class Main {
 
         //String str = Arrays.toString(CodeWars.invert(myIntArray));
 
-        String str = "abcd";
-        System.out.println(CodeWars.accum(str));
+       // String str = "abcd";
+        // System.out.println(CodeWars.accum(str));
+
+        CodeWars.sortDesc(42145);
+         System.out.println();
 
     }
 }
