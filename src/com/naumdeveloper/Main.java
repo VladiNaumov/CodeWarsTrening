@@ -11,7 +11,7 @@ public class Main {
         //String str = Arrays.toString(CodeWars.invert(myIntArray));
 
         String str = "abc";
-        CodeWars.accum(str);
+        System.out.println(CodeWars.accum(str));
 
     }
 }

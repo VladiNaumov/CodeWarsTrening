@@ -83,7 +83,7 @@ You can assume that all values are integers. Do not mutate the input array/list.
     The parameter of accum is a string which includes only letters from a..z and A..Z.
      */
 
-    public static void accum(String s) {
+    public static String accum(String s) {
 
         char[] c_arr = s.toCharArray();
 
@@ -91,14 +91,20 @@ You can assume that all values are integers. Do not mutate the input array/list.
 
         for(int i = 0; i < c_arr.length; i++) {
             summa.add(c_arr[i]);
+
             for(int j = 0; j < i; j++)
                 summa.add(c_arr[i]);
+
+          //  summa.add('-');
         }
 
-        for(char var : summa){
-            System.out.print(var);
+        StringBuilder builder = new StringBuilder(summa.size());
+        for (Character ch: summa){
+            builder.append(ch);
+
         }
 
+            return builder.toString();
     }
 
 }
