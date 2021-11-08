@@ -23,118 +23,6 @@ public class CodeWars {
     }
 
 
-
-
-    /*
-    6ku
-    Consider the function
-
-    f: x -> sqrt(1 + x) - 1 at x = 1e-15.
-
-    We get: f(x) = 4.44089209850062616e-16
-
-    or something around that, depending on the language.
-
-    This function involves the subtraction of a pair of similar numbers when x is near 0 and the results are significantly erroneous in this region. Using pow instead of sqrt doesn't give better results.
-
-    A "good" answer is 4.99999999999999875... * 1e-16.
-
-    Can you modify f(x) to give a good approximation of f(x) in the neighborhood of 0?
-
-    Note:
-    Don't round or truncate your results. See the testing function in Sample Tests:.
-     */
-
-    public static double f(double x) {
-        // your code
-        return 0.0;
-    }
-
-
-    /*
-    6 KU
-    You live in the city of Cartesia where all roads are laid out in a perfect grid.
-    You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk.
-    The city provides its citizens with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk (eg. ['n', 's', 'w', 'e']).
-    You always walk only a single block for each letter (direction) and you know it takes you one minute to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point.
-    Return false otherwise.
-
-    Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only).
-    It will never give you an empty array (that's not a walk, that's standing still!).
-     */
-
-    public static boolean isValid(char[] walk) {
-        // Insert brilliant code here
-        return true;
-    }
-
-    /*
-    6KU
-    Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence,
-    which is the number of times you must multiply the digits in num until you reach a single digit.
-
-    For example:
-
-     persistence(39) == 3 // because 3*9 = 27, 2*7 = 14, 1*4=4
-                          // and 4 has only one digit
-
-     persistence(999) == 4 // because 9*9*9 = 729, 7*2*9 = 126,
-                           // 1*2*6 = 12, and finally 1*2 = 2
-
-     persistence(4) == 0 // because 4 is already a one-digit number
-     */
-
-    public static int persistence(long n) {
-        // your code
-
-        return 0;
-    }
-
-    /*
-    Well met with Fibonacci bigger brother, AKA Tribonacci.
-
-    As the name may already reveal, it works basically like a Fibonacci, but summing the last 3 (instead of 2) numbers of the sequence to generate the next. And, worse part of it,
-    regrettably I won't get to hear non-native Italian speakers trying to pronounce it :(
-
-    So, if we are to start our Tribonacci sequence with [1, 1, 1] as a starting input (AKA signature), we have this sequence:
-
-    [1, 1 ,1, 3, 5, 9, 17, 31, ...]
-    But what if we started with [0, 0, 1] as a signature? As starting with [0, 1] instead of [1, 1] basically shifts the common Fibonacci sequence by once place,
-    you may be tempted to think that we would get the same sequence shifted by 2 places, but that is not the case and we would get:
-
-    [0, 0, 1, 1, 2, 4, 7, 13, 24, ...]
-    Well, you may have guessed it by now, but to be clear: you need to create a fibonacci function that given a signature array/list,
-    returns the first n elements - signature included of the so seeded sequence.
-
-    Signature will always contain 3 numbers; n will always be a non-negative number;
-    if n == 0, then return an empty array (except in C return NULL) and be ready for anything else which is not clearly specified ;)
-
-    If you enjoyed this kata more advanced and generalized version of it can be found in the Xbonacci kata
-
-    [Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
-     */
-
-    public double[] tribonacci(double[] s, int n) {
-
-        double array [] = new double[10];
-
-        return  array;
-    }
-
-    /*
-    6KU
-    A pangram is a sentence that contains every single letter of the alphabet at least once. For example,
-    the sentence "The quick brown fox jumps over the lazy dog" is a pangram,
-    because it uses the letters A-Z at least once (case is irrelevant).
-
-    Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
-     */
-
-    public boolean check(String sentence){
-
-        return true;
-    }
-
     /*
 
     In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
@@ -199,36 +87,213 @@ public class CodeWars {
         return 0;
     }
 
-    /*
-    Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number.
-    You can guarantee that input is non-negative.
+/*
+    Complete the solution so that it reverses all of the words within the string passed in.
 
-    Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
+    Example:
+
+    "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
+ */
+
+    public static String reverseWords(String str){
+        //write your code here...
+        return "";
+    }
+
+    /*
+    Nathan loves cycling.
+
+    Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+    You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+    For example:
+
+    time = 3 ----> litres = 1
+
+    time = 6.7---> litres = 3
+
+    time = 11.8--> litres = 5
      */
 
-    public static int countBits(int n){
-        // Show me the code!
+    public int Liters(double time)  {
+
+        //Your code goes here! Hint: You should change that -1
+        return -1;
+
+    }
+
+    /*
+    It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string.
+    You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+     */
+
+    public static String remove(String str) {
+
+        return "";
+    }
+
+    /*
+    Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+
+    Examples input/output:
+
+    XO("ooxx") => true
+    XO("xooxx") => false
+    XO("ooxXm") => true
+    XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+    XO("zzoo") => false
+     */
+
+    public static boolean getXO (String str) {
+
+        return true;
+
+    }
+
+    /*
+    Description:
+    Make a simple function called greet that returns the most-famous "hello world!".
+
+    Style Points
+    Sure, this is about as easy as it gets. But how clever can you be to create the most creative hello world you can think of?
+    What is a "hello world" solution you would want to show your friends?
+     */
+
+    public static String greet() {
+        return "hello world!";
+    }
+
+    /*
+    Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+    invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+    invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+    invert([]) == []
+     */
+
+    public static int[] invert(int[] array) {
+
+        return null;
+    }
+
+    /*
+    Sum all the numbers of the array (in F# and Haskell you get a list) except the highest and the lowest element (the value, not the index!).
+    (The highest/lowest element is respectively only one element at each edge, even if there are more than one with the same value!)
+
+    Example:
+
+    { 6, 2, 1, 8, 10 } => 16
+    { 1, 1, 11, 2, 3 } => 6
+
+    If array is empty, null or None, or if only 1 Element exists, return 0.
+    Note:In C++ instead null an empty vector is used. In C there is no null. ;-)
+     */
+
+    public static int sum(int[] numbers)
+    {
         return 0;
     }
 
     /*
-    There is an array with some numbers. All numbers are equal except for one. Try to find it!
+    Given an array of integers.
 
-        Kata.findUniq(new double[]{ 1, 1, 1, 2, 1, 1 }); // => 2
-        Kata.findUniq(new double[]{ 0, 0, 0.55, 0, 0 }); // => 0.55
-        It’s guaranteed that array contains at least 3 numbers.
+    Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
 
-        The tests contain some very huge arrays, so think about performance.
+    If the input array is empty or null, return an empty array.
 
-        This is the first kata in series:
-
-        Find the unique number (this kata)
-        Find the unique string
-        Find The Unique
+    Example
+    For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
      */
 
-    public static double findUniq(double arr[]) {
-        // Do the magic
-        return arr[0];
+    public static int[] countPositivesSumNegatives(int[] input)
+    {
+        return null; //return an array with count of positives and sum of negatives
     }
+
+    /*
+    Given an array of integers, return a new array with each value doubled.
+
+    For example:
+
+    [1, 2, 3] --> [2, 4, 6]
+     */
+
+    public static int[] map(int[] arr) {
+
+        return new int[0];
+    }
+
+    /*
+
+    Build a function that returns an array of integers from n to 1 where n>0.
+
+    Example : n=5 --> [5,4,3,2,1]
+     */
+
+    public static int[] reverse(int n){
+        //your code
+        return new int[0];
+    }
+
+    /*
+    Simple, remove the spaces from the string, then return the resultant string.
+     */
+
+    public static String noSpace(final String x) {
+        return  x;
+    }
+
+    /*
+    Will you make it?
+    You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away!
+    You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not.
+    Function should return true (1 in Prolog) if it is possible and false (0 in Prolog) if not.
+    The input values are always positive.
+     */
+
+    public static boolean zeroFuel(double distanceToPump, double mpg, double fuelLeft) {
+        // Your code here!
+        return true;
+    }
+
+    /*
+    ou task is to implement an simple interpreter for the notorious esoteric language HQ9+ that will work for a single character input:
+
+    If the input is 'H', return 'Hello World!'
+    If the input is 'Q', return the input
+    If the input is '9', return the full lyrics of 99 Bottles of Beer. It should be formatted like this:
+    99 bottles of beer on the wall, 99 bottles of beer.
+    Take one down and pass it around, 98 bottles of beer on the wall.
+    98 bottles of beer on the wall, 98 bottles of beer.
+    Take one down and pass it around, 97 bottles of beer on the wall.
+    97 bottles of beer on the wall, 97 bottles of beer.
+    Take one down and pass it around, 96 bottles of beer on the wall.
+    ...
+    ...
+    ...
+    2 bottles of beer on the wall, 2 bottles of beer.
+    Take one down and pass it around, 1 bottle of beer on the wall.
+    1 bottle of beer on the wall, 1 bottle of beer.
+    Take one down and pass it around, no more bottles of beer on the wall.
+    No more bottles of beer on the wall, no more bottles of beer.
+    Go to the store and buy some more, 99 bottles of beer on the wall.
+     */
+
+    public static String HQ9(char code) {
+        return null;
+    }
+
+    /*
+    Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+            [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+     */
+    public static int grow(int[] x){
+
+        return 0;
+
+    }
+
 }
