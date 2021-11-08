@@ -23,21 +23,7 @@ public class CodeWars {
     }
 
 
-    /*
-    Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order.
-    Essentially, rearrange the digits to create the highest possible number.
 
-    Examples:
-    Input: 42145 Output: 54421
-    Input: 145263 Output: 654321
-    Input: 123456789 Output: 987654321
-     */
-
-    public static int sortDesc(final int num) {
-        String[] array = String.valueOf(num).split("");
-        Arrays.sort(array, Collections.reverseOrder());
-        return Integer.valueOf(String.join("", array));
-    }
 
     /*
     6ku
@@ -64,15 +50,6 @@ public class CodeWars {
         return 0.0;
     }
 
-    /*
-    Removed due to copyright infringement.
-     */
-
-    public static String SongDecoder (String song)
-    {
-        // Your code is here...
-        return "";
-    }
 
     /*
     6 KU
@@ -232,5 +209,26 @@ public class CodeWars {
     public static int countBits(int n){
         // Show me the code!
         return 0;
+    }
+
+    /*
+    There is an array with some numbers. All numbers are equal except for one. Try to find it!
+
+        Kata.findUniq(new double[]{ 1, 1, 1, 2, 1, 1 }); // => 2
+        Kata.findUniq(new double[]{ 0, 0, 0.55, 0, 0 }); // => 0.55
+        It’s guaranteed that array contains at least 3 numbers.
+
+        The tests contain some very huge arrays, so think about performance.
+
+        This is the first kata in series:
+
+        Find the unique number (this kata)
+        Find the unique string
+        Find The Unique
+     */
+
+    public static double findUniq(double arr[]) {
+        // Do the magic
+        return arr[0];
     }
 }
