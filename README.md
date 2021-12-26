@@ -1,0 +1,3 @@
+# CodeWarsTrening
+
+my trening CodeWars 
