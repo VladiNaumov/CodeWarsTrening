@@ -1,3 +1,3 @@
 # CodeWarsTrening
 
-my trening CodeWars 
+my trening in CodeWars 
